@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="HijrahTeduh"></style>
+
+    <style name="HijrahTeduh.Font" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">64sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="HijrahTeduh.Font.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="HijrahTeduh.Font.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:fontFamily">@font/dm_sans</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="HijrahTeduh.ButtonOutlined" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="backgroundTint">@color/m3_filled_icon_button_container_color_selector</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Button.IconButton.Filled</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">@dimen/outlined</item>
+    </style>
+
+    <style name="HijrahTeduh.ButtonOutlined.Tiny" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Button.IconButton.Filled</item>
+        <item name="strokeColor">@color/white</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+    </style>
+
+    <style name="HijrahTeduh.ButtonText" parent="Widget.Material3.Button.IconButton.Outlined">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Button.IconButton.Filled</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <item name="strokeWidth">@dimen/outlined</item>
+    </style>
+
+    <style name="HijrahTeduh.ButtonText.Tiny">
+        <item name="android:textSize">8sp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="HijrahTeduh.ButtonMenu" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Material3.Button.IconButton.Filled</item>
+        <item name="strokeColor">@android:color/transparent</item>
+        <item name="strokeWidth">@dimen/outlined</item>
+        <item name="fontFamily">@font/dm_sans</item>
+        <item name="android:drawablePadding">@dimen/spacing_small</item>
+        <item name="android:height">98dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">@dimen/spacing_small</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Material3.Corner.None</item>
+    </style>
+
+    <style name="HijrahTeduh.Shape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">80dp</item>
+    </style>
+
+    <style name="HijrahTeduh.Shape.BottomBar" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeTopRight">8dp</item>
+    </style>
+
+    <style name="HijrahTeduh.Shape.Normal" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="HijrahTeduh.BottomBar" parent="Widget.Material3.BottomNavigationView">
+        <item name="shapeAppearance">@style/HijrahTeduh.Shape.BottomBar</item>
+        <item name="colorSurface">@color/red</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+        <item name="colorSecondaryContainer">@color/red</item>
+        <item name="colorOnSurfaceVariant">@color/white</item>
+        <item name="colorSurfaceVariant">@color/red</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlayExtended" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="BottomNavigationView">
+        <item name="fontFamily">@font/dm_sans_medium</item>
+        <item name="android:textColor">@color/white_smoke</item>
+    </style>
+
+    <style name="BottomNavigationView.Active">
+        <item name="fontFamily">@font/dm_sans_bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Rounded">
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ButtonToggle" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="colorOutline">@color/red</item>
+        <item name="strokeColor">@color/red</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="backgroundTint">@color/buttons</item>
+        <item name="android:textColor">@color/text_buttons</item>
+    </style>
+
+</resources>

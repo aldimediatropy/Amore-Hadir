@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.setalis.amorehr.views.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <argument
+            android:name="ShowAppBarBack"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_time_off"
+        android:name="com.setalis.amorehr.views.timeoff.TimeOffFragment"
+        android:label="@string/title_time_off"
+        tools:layout="@layout/fragment_time_off">
+        <argument
+            android:name="ShowAppBarBack"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.setalis.amorehr.views.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="ShowAppBarBack"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_attend"
+        android:name="com.setalis.amorehr.views.attend.AttendFragment"
+        android:label="@string/title_absen"
+        tools:layout="@layout/fragment_attend">
+        <argument
+            android:name="ShowAppBarBack"
+            android:defaultValue="true" />
+    </fragment>
+
+    <action
+        android:id="@+id/actionNavigationAttend"
+        app:destination="@id/navigation_attend"/>
+</navigation>

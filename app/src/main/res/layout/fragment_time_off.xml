@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_smoke">
+
+    <View
+        android:id="@+id/panel_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginTop="@dimen/divider"
+        app:layout_constraintBottom_toBottomOf="@id/toggleButton"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedButton="@id/button_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <Button
+            style="@style/ButtonToggle"
+            android:id="@+id/button_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All" />
+        <Button
+            style="@style/ButtonToggle"
+            android:id="@+id/button_approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approved"
+            />
+        <Button
+            style="@style/ButtonToggle"
+            android:id="@+id/button_reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejected"
+            />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your time-off list"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans_black"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toBottomOf="@id/panel_top"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <View
+        android:id="@+id/header_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toBottomOf="@id/label_title_list"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_date"
+        android:layout_width="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_attendance"
+        app:layout_constraintBottom_toBottomOf="@id/header_attendance"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_clock_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_radius_check_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Duration"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"
+        android:layout_marginStart="@dimen/spacing_between"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_clock_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:flow_maxElementsWrap="3"
+        app:flow_wrapMode="chain"
+        app:flow_horizontalStyle="spread"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="top"
+        android:layout_marginStart="@dimen/spacing_huge"
+        app:layout_constraintStart_toEndOf="@id/label_title_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/header_attendance"
+        app:layout_constraintTop_toTopOf="@id/header_attendance"
+        app:constraint_referenced_ids="label_title_clock_in, label_title_radius_check_in, label_title_clock_out"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_attendances"
+        android:fadingEdgeLength="0dp"
+        android:clipToPadding="false"
+        tools:itemCount="4"
+        android:nestedScrollingEnabled="true"
+        tools:listitem="@layout/item_attendance"
+        android:fadingEdge="none"
+        android:layout_marginTop="@dimen/divider"
+        app:layout_constraintTop_toBottomOf="@id/header_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

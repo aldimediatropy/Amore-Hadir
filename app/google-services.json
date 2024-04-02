@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "417697361120",
+    "project_id": "amore-hadir",
+    "storage_bucket": "amore-hadir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417697361120:android:9451f6c5ab32cc0d237485",
+        "android_client_info": {
+          "package_name": "com.setalis.amorehr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDle4j0PCNXva8yrniDZSvsNqEmEDgD4co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417697361120:android:7a27c4b77509f52a237485",
+        "android_client_info": {
+          "package_name": "com.setalis.amorehr.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDle4j0PCNXva8yrniDZSvsNqEmEDgD4co"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

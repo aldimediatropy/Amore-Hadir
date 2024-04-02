@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AmoreHR" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Surface brand color. -->
+        <item name="colorOnContainer">@color/red</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorSurfaceContainer">@color/white_smoke</item>
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorOnSurfaceVariant">@color/gray</item>
+        <item name="colorSurfaceVariant">@color/black</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryContainer">@color/white</item>
+        <item name="colorOnPrimaryContainer">@color/red</item>
+
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/yellow_fade</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorOnSecondaryContainer">@color/black</item>
+        <item name="colorSecondaryContainer">@color/red</item>
+
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/red</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white_smoke</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Customize your theme here. -->
+        <item name="textAppearanceDisplaySmall">@style/HijrahTeduh.Font</item>
+        <item name="textAppearanceTitleLarge">@style/HijrahTeduh.Font.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/HijrahTeduh.Font.TitleMedium</item>
+
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Theme.AmoreHR.Splash">
+        <item name="android:statusBarColor" tools:targetApi="l">@color/red</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:colorBackground">@color/red</item>
+    </style>
+</resources>

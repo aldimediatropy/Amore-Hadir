@@ -1,0 +1,10 @@
+<resources>
+
+    <declare-styleable name="ImageScaleView">
+        <attr name="matrixType" format="enum">
+            <enum name="topCenter" value="0" />
+            <enum name="bottomCenter" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

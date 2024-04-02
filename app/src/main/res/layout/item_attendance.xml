@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FDFDFD"
+    android:layout_marginTop="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_date"
+        android:layout_width="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="24"
+        android:textSize="16sp"
+        app:fontFamily="@font/dm_sans_bold"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/spacing_small"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mar"
+        android:textSize="8sp"
+        app:fontFamily="@font/dm_sans_medium"
+        android:layout_marginTop="-2dp"
+        app:layout_constraintStart_toStartOf="@id/label_title_date"
+        app:layout_constraintEnd_toEndOf="@id/label_title_date"
+        app:layout_constraintTop_toBottomOf="@id/label_title_date"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_clock_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans_medium"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_radius_check_in"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"
+        android:layout_marginStart="@dimen/spacing_between"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_clock_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label_title_radius_check_out"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="12sp"
+        app:fontFamily="@font/dm_sans"
+        android:layout_marginStart="@dimen/spacing_between"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_huge"
+        app:constraint_referenced_ids="label_title_clock_in, label_title_radius_check_in, label_title_clock_out, label_title_radius_check_out"
+        app:flow_horizontalAlign="center"
+        app:flow_horizontalStyle="spread"
+        app:flow_maxElementsWrap="4"
+        app:flow_verticalAlign="top"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/label_title_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
